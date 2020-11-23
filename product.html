@@ -1,0 +1,232 @@
+<style>
+ @import url("https://fonts.googleapis.com/css?family=Cabin|Dosis|Fjalla+One|Wendy+One");
+
+ @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@1&display=swap');
+    
+    #body {
+        background-color: lightgray;
+        text-align: center;
+        font-family: Cabin;
+        font-size: 14px;
+       margin-top: 30px;
+
+    }
+
+  
+    #ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: maroon;
+        font-family: 'IM Fell French Canon', serif;
+
+    }
+
+    .footerlist {
+
+        list-style-type: none;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+        overflow: hidden;
+       
+        background-color: maroon;
+      
+
+    }
+    
+   .flex1 {
+
+       flex: 1;
+       width: 25%;
+   }
+
+    
+    #nav {
+
+        position: fixed;
+        width: 100%;
+       top: 0;
+
+    }
+li {
+
+    float:left;
+  
+    border-right: 1px solid whitesmoke;
+}
+
+li a {
+
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 50px;
+    text-decoration: none;
+   
+}
+
+li a:hover {
+
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes background-color {
+    100% {
+
+        background-color:orangered;
+    }
+}
+
+#section {
+
+    padding: 50px;
+}
+
+#h1 {
+
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 32px;
+    margin: 0px;
+}
+
+.emailform {
+
+width: 200px;
+height: 25px;
+
+}
+
+#btn {
+
+padding: 15px 15px;
+margin: 5px;
+background-color: maroon;
+font-size: 20px;
+color: white;
+}
+
+button:hover {
+
+animation-name: background-color;
+animation-duration: 500ms;
+animation-fill-mode: forwards;
+}
+
+.container1 {
+
+    max-width: 1000px;
+    width: auto;
+    margin: 10px auto;
+    background: wheat;
+    border: 1px solid black;
+    
+ 
+
+}
+
+
+.container- {
+
+max-width: 1000px;
+width: auto;
+margin: 20px auto;
+background: wheat;
+border: 1px solid black;
+margin-top: 10px auto;
+}
+
+.h2 {
+    font-family: 'IM Fell French Canon', serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.p {
+
+    font-size: 24px;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 800px) {
+    #body {
+        width: 100%;
+    }
+}
+
+
+</style>
+
+<html>
+<!DOCTYPE html>
+
+<head>
+    <title>Product Landing Page</title>
+    <meta charset="utf-8"> 
+</head>
+
+
+
+<body id="body">
+    <nav id="nav">
+    <ul id="ul">
+        <li><a href=#home>About</a></li>
+        <li><a href=#products>Products</a></li>
+        <li><a href=#contact>Contact Us</a></li>
+        <li style="float:right"><a href=#about>Our Team</a></li>
+    </ul>
+    </nav>
+
+    <section id="section">
+        <form>
+        <div>
+        <h1 id="h1">Guitars of the Finest Make</h2>
+        <input class="emailform"
+        type="text" 
+        name="email"
+        id="email"
+        placeholder="Please enter your e-mail address">
+        <br>
+        <button id="btn" type="submit">Join us!</button>
+        </div>
+        </form>
+    </section>
+
+    <!-- too many divs? -->
+    <div id="home"class="container1">
+        <h2 class="h2">Superior Craftsmanship</h2>
+        <p class="p"> Our artisans utilize the highest quality wood to construct our guitars for better sound quality and durability to maintain your tone</p>
+    </div>
+    <div class="container-">
+        <h2 class="h2">Fast Shipping</h2>
+        <p class="p">We have a small, dedicated shipping department that handles deliveries in-house. This allows us to deliver to you quickly and for minimal cost</p>
+    </div>
+    <div class="container-">
+        <h2 class="h2">Premium Customer Service</h2> 
+        <p class="p">We are entirely dedicated toward your customer experience and our staff is available arroudn the clock to assist your needs</p>
+    </div>
+    <div class="container-">
+        <h2 class="h2">Family Owned</h2>
+        <p class="p">We are 100% a family owned business. Our objective is to serve the guitar community, we are not beholden to shareholders or corporate owners </p>
+    </div>
+
+    <footer>
+        <ul class=footerlist>
+          <li class="flex1"><a href="#">Privacy</a></li>
+          <li class="flex1"><a href="#">Terms</a></li>
+          <li class="flex1"><a href="#">Affiliates</a></li>
+          <li class="flex1"><a href="#">Returns</a></li>
+        </ul>
+        <span>Copyright 2020</span>
+      </footer>
+    </div>
+      
+
+</body>
+</html>
